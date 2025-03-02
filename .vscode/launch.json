@@ -4,6 +4,7 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+<<<<<<< HEAD
     {
       "type": "java",
       "name": "Main",
@@ -11,17 +12,28 @@
       "mainClass": "frc.robot.Main",
       "projectName": "shishkabots-2025-Imported"
     },
+=======
+
+>>>>>>> de537cc54d7feec1fe24553cac110767a5757556
     {
       "type": "wpilib",
       "name": "WPILib Desktop Debug",
       "request": "launch",
+<<<<<<< HEAD
       "desktop": true
+=======
+      "desktop": true,
+>>>>>>> de537cc54d7feec1fe24553cac110767a5757556
     },
     {
       "type": "wpilib",
       "name": "WPILib roboRIO Debug",
       "request": "launch",
+<<<<<<< HEAD
       "desktop": false
+=======
+      "desktop": false,
+>>>>>>> de537cc54d7feec1fe24553cac110767a5757556
     }
   ]
 }

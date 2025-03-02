@@ -7,6 +7,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
+<<<<<<< HEAD
 import edu.wpi.first.wpilibj.DataLogManager;
 import edu.wpi.first.wpilibj.DriverStation;
 
@@ -29,6 +30,16 @@ public class Robot extends TimedRobot {
     
     // Instantiate our RobotContainer
     robotContainer = new RobotContainer();
+=======
+
+public class Robot extends TimedRobot {
+  private Command m_autonomousCommand;
+
+  private final RobotContainer m_robotContainer;
+
+  public Robot() {
+    m_robotContainer = new RobotContainer();
+>>>>>>> de537cc54d7feec1fe24553cac110767a5757556
   }
 
   @Override
@@ -47,10 +58,17 @@ public class Robot extends TimedRobot {
 
   @Override
   public void autonomousInit() {
+<<<<<<< HEAD
     autonomousCommand = robotContainer.getAutonomousCommand();
 
     if (autonomousCommand != null) {
       autonomousCommand.schedule();
+=======
+    m_autonomousCommand = m_robotContainer.getAutonomousCommand();
+
+    if (m_autonomousCommand != null) {
+      m_autonomousCommand.schedule();
+>>>>>>> de537cc54d7feec1fe24553cac110767a5757556
     }
   }
 
@@ -62,8 +80,13 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopInit() {
+<<<<<<< HEAD
     if (autonomousCommand != null) {
       autonomousCommand.cancel();
+=======
+    if (m_autonomousCommand != null) {
+      m_autonomousCommand.cancel();
+>>>>>>> de537cc54d7feec1fe24553cac110767a5757556
     }
   }
 
@@ -83,4 +106,8 @@ public class Robot extends TimedRobot {
 
   @Override
   public void testExit() {}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> de537cc54d7feec1fe24553cac110767a5757556
